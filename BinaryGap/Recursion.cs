@@ -6,7 +6,7 @@ namespace BinaryGap
     {
         public static int Solution(int n)
         {
-            if (n < 0 || n > 2147483647)
+            if (n <= 0 || n > 2147483647)
                 return 0;
             var binary = Convert.ToString(n, 2);
             return GetMaxBynaryGap(binary, 0);

@@ -15,7 +15,8 @@ namespace BinaryGap
                     Console.WriteLine("Line is not number");
                 else
                 {
-                    var result = Recursion.Solution(n);//Solution.solution(n);
+                    //var result = Recursion.Solution(n);//Solution.solution(n);
+                    var result = Solution.solution(n);
                     Console.WriteLine($"Number {n} binary {binary} lenght is {result}");
                 }
             }
