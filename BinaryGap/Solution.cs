@@ -13,7 +13,7 @@ namespace BinaryGap
             int result = 0;
             while (binary.Any())
             {
-                binary = binary.SkipWhile(x => x.CompareTo('1') == 0).ToArray();                 
+                binary = binary.SkipWhile(x => x.CompareTo('1') == 0).ToArray();
                 var gap = binary.TakeWhile(x => x.CompareTo('0') == 0 && binary.Contains('1'));
                 if (!gap.Any())
                     break;

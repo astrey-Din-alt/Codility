@@ -8,9 +8,8 @@ namespace BinaryGap
         {
             while (true)
             {
-                int n;
                 var line = Console.ReadLine();
-                var isInt = int.TryParse(line, out n);
+                var isInt = int.TryParse(line, out int n);
                 var binary = Convert.ToString(n, 2);
                 if (!isInt)
                     Console.WriteLine("Line is not number");

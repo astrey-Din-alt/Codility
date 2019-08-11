@@ -14,13 +14,13 @@ namespace BinaryGap
 
         private static int GetMaxBynaryGap(string str, int result)
         {
-            int i;
             int currentCount = 0;
             bool startWithOne = false;
             bool endWithOne = false;
             if (str.Length == 0)
                 return result;
             {
+                int i;
                 for (i = 0; i < str.Length; i++)
                 {
                     if (str[i] == '1' && !startWithOne)
@@ -39,7 +39,7 @@ namespace BinaryGap
                         break;
                     }
                 }
-                str = str.Remove(0, (currentCount + 1));                
+                str = str.Remove(0, (currentCount + 1));
                 if (currentCount > result && startWithOne && endWithOne)
                     result = currentCount;
                 return GetMaxBynaryGap(str, result);
